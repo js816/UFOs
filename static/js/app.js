@@ -45,56 +45,22 @@ function updateFilters() {
       delete filters[filterId];
     }
   
-    // Adding for debugging
-    // console.log(filters);
-    // console.log(Object.keys(filters));
-    // console.log(Object.values(filters));
-    // 6. Call function to apply all filters and rebuild the table
-    // Debugging, trying passing in filters for the fuction
+   // 6. Call function to apply all filters and rebuild the table
     filterTable(filters);
-  
   }
   
   // 7. Use this function to filter the table when data is entered.
-  // Debugging, trying passing in filters for the function
   function filterTable(filters) {
   
     // 8. Set the filtered data to the tableData.
     let filteredData = tableData;
   
-    // Debugging before the loop
-    // console.log(filters);
-    // console.log(Object.keys(filters));
-    // console.log(Object.values(filters));
-
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    // filter by row.key === value
-    //filters.forEach(filteredData = filteredData.filter(row => row.filterId === elementValue));
-    // filters.forEach(filteredData = filteredData.filter(row => row.filter = ))
-    /*
-    for (const filter in filters) {
-      // filterKey = Object.keys(filter);
-      console.log(filter);
-      console.log(Object.values(filter));
-      console.log(Object.keys(filter));
-      filteredData = filteredData.filter(row => row.filter === filter);
-      // console.log(filters[filter]);
-    }
-    */
-    
     // Debugging by adapting code found here:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries
-    for (const [key, value] of Object.entries(filters)) {
-      //filteredData = filteredData.filter(row => row.key === value);
-      // Filter works with row.datetime, etc but not row.key even though key = datetime
-      filteredData = filteredData.filter(row => row.datetime === value);
-      // Debugging with two == instead of three ===
-      //filteredData = filteredData.filter(row => row.key == value);
-      console.log(`filteredData = filteredData.filter(row => row.${key} === ${value});`);
-      console.log(`${key} === ${value}`);
-      console.log(key);
-      console.log(value);
-    };
+    // Thank you to TA Sasha for help debugging, using forEach instead of for loop
+    Object.entries(filters).forEach(([key, value]) => {filteredData = filteredData.filter(row => row[key] === value)}
+    );
 
     // 10. Finally, rebuild the table using the filtered data
     buildTable(filteredData);
