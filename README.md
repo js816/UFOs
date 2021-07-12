@@ -6,7 +6,7 @@
 
 The purpose of this project was to develop a website using JavaScript that allows users to filter the UFO data to find those specific sightings they’re interested in.  The original data contained 111 records and for most users, this would be overwhelming to try to sort through.  
 
-With the addition of filters for a variety of the columns, users are able to quickly dig into the data in which they’re most interested.
+With the addition of filters for a variety of the columns, users are able to quickly dig into the specific data wanted.
 
 ![Sightings_site](https://user-images.githubusercontent.com/82730954/125177532-35e3b880-e1a2-11eb-8cec-b69190ccd973.PNG)
 
@@ -22,7 +22,7 @@ The resulting website is intuitive and user friendly.  The various provided text
 ## Filtering
 
 
-When the page initially loads, each of the 111 sightings are shown.  When a visitor wants to filter for specific sightings, they can simply fill in their search criteria in one or more of the filter boxes.  The filter boxes, shown in the image below, are prefilled with sample searches.  These show the user exactly how the information should be entered thus helping prevent errors.
+When the page initially loads, each of the 111 sightings are shown.  When visitors want to filter for specific sightings, they can simply fill in the search criteria in one or more of the filter boxes (date, city, state, country, and shape).  The filter boxes, shown in the image below, are prefilled with sample searches.  These show the user exactly how the information should be entered thus helping prevent errors.
 
 ![Filter_boxes](https://user-images.githubusercontent.com/82730954/125177537-409e4d80-e1a2-11eb-952d-20bfc6792396.PNG)
 
@@ -59,7 +59,7 @@ In closing, there are some additional enhancements that could be made to the sig
 
 - Also, the provided dataset has some code that could be cleaned up.  For example, some comments show such as "i&#39m in naples park." Cleaning up some of these ASCII code would polish the data a bit and allow users to see "i’m in naples park"
 
-There are also some drawbacks to the filtering.  For example, currently only one state a time can be searched.  If a visitor wanted to search both Kansas and Missouri, two separate searches would be needed.  Additionally, searches must be exact so any future data should be cleaned to ensure that it matches.  For example, if a shape is listed as triangular, it wouldn’t match a search for triangle.  
+There are also some drawbacks to the filtering.  For example, currently only one state a time can be searched.  If a visitor wanted to search for sightings in the Kansas City area, which encompasses both Kansas and Missouri, two separate searches would be needed.  Additionally, searches must be exact so any future data should be cleaned to ensure that it matches.  For example, if a shape is listed as triangular, it wouldn’t match a search for triangle.  
 
-It was a fun delight to work on this project.  Thank you for allowing me to be involved.
+It was a pleasure and delight to work on this project.  Thank you for allowing me to be involved.
 
