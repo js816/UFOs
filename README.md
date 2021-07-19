@@ -47,7 +47,7 @@ To reset the table and again show all of the sightings, a user has multiple opti
 # Summary
 
 
-In closing, there are some additional enhancements that could be made to the sight in the future based upon your desires and those of your visitors.  Potential developments include:
+In closing, there are some additional enhancements that could be made to the site in the future based upon your desires and those of your visitors.  Potential developments include:
 
 - Adding a more robust dataset for visitors to enjoy and investigate
 
